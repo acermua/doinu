@@ -1,0 +1,103 @@
+name: doinu
+description: "A foss music application"
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.13+13
+
+environment:
+  sdk: ">=3.10.4 < 4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # core
+  just_audio:
+  audio_session:
+  audio_service:
+  flutter_riverpod:
+  riverpod_annotation:
+  just_audio_background:
+  supabase_flutter:
+
+  # misc
+  intl:
+  path:
+  http:
+  dio:
+  html:
+  rxdart:
+  dart_des:
+  path_provider:
+  html_unescape:
+  in_app_update:
+
+  # supporting
+  app_links:
+  envied:
+  shared_preferences:
+  package_info_plus:
+  share_plus:
+  permission_handler:
+  flutter_local_notifications:
+  internet_connection_checker_plus:
+  disk_space_plus:
+  url_launcher:
+  image_picker:
+
+  # ui
+  flashy_tab_bar2:
+  iconly:
+  cached_network_image:
+  readmore:
+  shimmer:
+  figma_squircle:
+  marquee:
+  page_transition:
+  flutter_swipe_action_cell:
+  toastification:
+  drag_and_drop_lists:
+  palette_generator_master:
+  google_fonts:
+
+  # ios
+  cupertino_icons:
+  flutter_native_splash: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons:
+  build_runner:
+  flutter_lints: ^6.0.0
+  envied_generator:
+  riverpod_generator:
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/icons/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+
+  image_path_android: "assets/icons/doinu.png"
+  image_path_ios: "assets/icons/ioslight.png"
+
+  adaptive_icon_foreground: "assets/icons/doinuwhite.png"
+  adaptive_icon_background: "#FF1DA0"
+  adaptive_icon_monochrome: "assets/icons/doinu.png"
+  adaptive_icon_foreground_inset: 24
+
+  remove_alpha_ios: true
+  background_color_ios: "#FF1DA0"
+
+flutter_native_splash:
+  color: "#FF1DA0"
+  image: assets/icons/ioslight.png
+  ios: true
+  android: false
